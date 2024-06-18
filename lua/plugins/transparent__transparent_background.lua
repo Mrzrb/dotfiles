@@ -34,6 +34,8 @@ return {
         "NeoTreeNormal",
         "NeoTreeFloatBorder",
         "NeoTreeNormalNC",
+        "TelescopeNormal",
+        "TelescopeBorder",
       },
       exclude_groups = {
         "StatusLineNC",
