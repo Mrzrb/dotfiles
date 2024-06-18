@@ -21,3 +21,4 @@ vim.keymap.set("v", "<C-g>a", ":<C-u>'<,'>GpAppend<cr>", keymapOptions("Visual A
 vim.api.nvim_set_keymap('n', ',w', ':w<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', 'jj', '<Esc>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>gg', ':FloatermNew --height=0.95 --width=0.95 lazygit<CR>', { noremap = true, silent = true })
+
