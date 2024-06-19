@@ -32,3 +32,10 @@ vim.api.nvim_set_keymap(
   ':lua require("telescope.builtin").grep_string({search = "POST(|GET("})<CR>',
   { noremap = true, silent = true, desc = "gin router" }
 )
+
+vim.api.nvim_set_keymap(
+  "n",
+  "<Leader>pT",
+  ':lua require("telescope.builtin").grep_string({search = "*testing.T"})<CR>',
+  { noremap = true, silent = true, desc = "gin router" }
+)
