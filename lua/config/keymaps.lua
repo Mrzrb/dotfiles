@@ -22,12 +22,6 @@ vim.api.nvim_set_keymap("n", ",w", ":w<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i", "jj", "<Esc>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap(
   "n",
-  "<leader>gg",
-  ":FloatermNew --height=0.95 --width=0.95 lazygit<CR>",
-  { noremap = true, silent = true }
-)
-vim.api.nvim_set_keymap(
-  "n",
   "<Leader>pr",
   ':lua require("telescope.builtin").grep_string({search = "POST(|GET("})<CR>',
   { noremap = true, silent = true, desc = "gin router" }
@@ -39,3 +33,8 @@ vim.api.nvim_set_keymap(
   ':lua require("telescope.builtin").grep_string({search = "*testing.T"})<CR>',
   { noremap = true, silent = true, desc = "gin router" }
 )
+
+vim.api.nvim_set_keymap("n", "J", ":resize -2<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "K", ":resize +2<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "L", ":vertical resize -6<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "H", ":vertical resize +6<CR>", { noremap = true, silent = true })
