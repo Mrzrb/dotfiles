@@ -27,6 +27,18 @@ return {
         "CursorLineNr",
         "StatusLine",
         "EndOfBuffer",
+        "NotifyINFOBody",
+        "NotifyINFOBorder",
+        "NotifyINFOBody4",
+        "NotifyINFOBorder4",
+        "NotifyTRACEBody",
+        "NotifyTRACEBorder",
+        "NotifyDEBUGBody",
+        "NotifyDEBUGBorder",
+        "NotifyERRORBody",
+        "NotifyERRORBorder",
+        "NotifyWARNBody",
+        "NotifyWARNBorder",
       },
       extra_groups = {
         "NormalFloat", -- plugins which have float panel such as Lazy, Mason, LspInfo
@@ -36,6 +48,7 @@ return {
         "NeoTreeNormalNC",
         "TelescopeNormal",
         "TelescopeBorder",
+        "NotifyBackground",
       },
       exclude_groups = {
         "StatusLineNC",
