@@ -6,3 +6,6 @@ vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.expandtab = true
 vim.opt.relativenumber = false
+vim.wo.number = false
+vim.opt.background = "dark"
+vim.opt.laststatus = 0

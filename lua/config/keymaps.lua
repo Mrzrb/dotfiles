@@ -38,3 +38,7 @@ vim.api.nvim_set_keymap("n", "J", ":resize -2<CR>", { noremap = true, silent = t
 vim.api.nvim_set_keymap("n", "K", ":resize +2<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "L", ":vertical resize -6<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "H", ":vertical resize +6<CR>", { noremap = true, silent = true })
+
+-- 在普通模式和插入模式下使用 Command + v 进行粘贴
+vim.api.nvim_set_keymap("n", "<D-v>", '"+p', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "<D-v>", '<Esc>"+pa', { noremap = true, silent = true })

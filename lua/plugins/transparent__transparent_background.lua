@@ -1,3 +1,7 @@
+if vim.fn.has("gui_running") == 1 then
+  return {}
+end
+
 return {
   "xiyaowong/transparent.nvim",
   opts = function()
